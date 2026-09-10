@@ -1,0 +1,7 @@
+services:
+  job-search-agent:
+    build: .
+    env_file:
+      - .env
+    ports:
+      - "8083:8083"
