@@ -11,7 +11,6 @@ public class JobSearchController {
     public JobSearchController(JobSearchService jobSearchService) {
         this.jobSearchService = jobSearchService;
     }
-
     @PostMapping("/run-job-search")
     public String runNow() throws Exception {
         String result = jobSearchService.searchJobs();
