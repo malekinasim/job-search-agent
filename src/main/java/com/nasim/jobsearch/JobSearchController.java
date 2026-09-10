@@ -12,11 +12,6 @@ public class JobSearchController {
         this.jobSearchService = jobSearchService;
     }
 
-    /**
-     * Manual trigger for testing: POST http://localhost:8080/run-job-search
-     * The scheduled run in JobSearchService fires automatically every day at 08:00
-     * without needing this endpoint at all.
-     */
     @PostMapping("/run-job-search")
     public String runNow() throws Exception {
         String result = jobSearchService.searchJobs();
