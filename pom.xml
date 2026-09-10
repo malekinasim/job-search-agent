@@ -42,6 +42,7 @@
     </dependencies>
 
     <build>
+        <finalName>job-search-agent</finalName>
         <plugins>
             <plugin>
                 <groupId>org.springframework.boot</groupId>
